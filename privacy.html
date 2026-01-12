@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy - Budget App</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 0; background:#fff; color:#111; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px; }
+    a { color:#2D6CDF; }
+    h1 { margin-top: 0; }
+    p, li { line-height: 1.55; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a href="./index.html">← Back</a>
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> <span id="d"></span></p>
+
+    <p>
+      Budget App is a personal budgeting tool. This Privacy Policy explains what information we collect,
+      how we use it, and your choices.
+    </p>
+
+    <h2>Information we collect</h2>
+    <ul>
+      <li><strong>Account and app data:</strong> basic account info you provide (if applicable), and your budgeting categories and settings.</li>
+      <li><strong>Financial data via Plaid:</strong> if you choose to connect a bank account, Budget App uses Plaid to retrieve account and transaction information.</li>
+    </ul>
+
+    <h2>How we use information</h2>
+    <ul>
+      <li>To provide budgeting features (transaction import, categorization, reporting).</li>
+      <li>To maintain and improve app reliability and security.</li>
+    </ul>
+
+    <h2>Plaid</h2>
+    <p>
+      Budget App uses Plaid to connect to your financial institution. Budget App does not receive or store
+      your bank login credentials. Plaid may process data according to its own policies.
+    </p>
+
+    <h2>Data storage and security</h2>
+    <p>
+      We take reasonable measures to protect data. Access tokens and sensitive credentials are stored on the server
+      and are not exposed to the client application.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>You can choose not to connect a bank account and use manual entry (if supported).</li>
+      <li>You can disconnect a bank connection (if supported) to stop future syncing.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>
+      For privacy questions, contact: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+    </p>
+
+    <script>
+      const now = new Date();
+      document.getElementById("d").textContent = now.toISOString().slice(0,10);
+    </script>
+  </div>
+</body>
+</html>
