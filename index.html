@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Budget App</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 0; background:#f6f8ff; color:#111; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px; }
+    .card { background:#fff; border-radius: 16px; padding: 28px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    h1 { margin: 0 0 10px; }
+    p { line-height: 1.55; }
+    a { color:#2D6CDF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .links { margin-top: 18px; display:flex; gap: 18px; flex-wrap: wrap; }
+    .pill { background:#eef3ff; padding:10px 14px; border-radius:999px; }
+    .small { color:#444; font-size: 14px; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Budget App</h1>
+      <p>
+        Budget App is a personal budgeting tool that helps users track spending, categorize transactions,
+        and plan monthly budgets. Bank connections are provided through Plaid.
+      </p>
+
+      <div class="links">
+        <a class="pill" href="./privacy.html">Privacy Policy</a>
+        <a class="pill" href="./terms.html">Terms</a>
+        <a class="pill" href="./support.html">Support</a>
+      </div>
+
+      <p class="small">
+        © <span id="y"></span> Budget App
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
