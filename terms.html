@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms - Budget App</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 0; background:#fff; color:#111; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px; }
+    a { color:#2D6CDF; }
+    h1 { margin-top: 0; }
+    p, li { line-height: 1.55; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a href="./index.html">← Back</a>
+    <h1>Terms of Service</h1>
+    <p><strong>Last updated:</strong> <span id="d"></span></p>
+
+    <p>
+      By using Budget App, you agree to these Terms. If you do not agree, do not use the app.
+    </p>
+
+    <h2>Personal project / no warranty</h2>
+    <p>
+      Budget App is provided “as is” without warranties of any kind. You are responsible for verifying
+      all financial information and decisions.
+    </p>
+
+    <h2>Bank connections</h2>
+    <p>
+      If you connect an account using Plaid, you authorize Budget App and Plaid to access account and transaction data
+      to provide budgeting features.
+    </p>
+
+    <h2>Limitation of liability</h2>
+    <p>
+      Budget App is not liable for any damages or losses arising from use of the app.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions? Contact: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+    </p>
+
+    <script>
+      const now = new Date();
+      document.getElementById("d").textContent = now.toISOString().slice(0,10);
+    </script>
+  </div>
+</body>
+</html>
